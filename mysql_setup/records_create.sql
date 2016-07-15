@@ -19,4 +19,6 @@ create table songs
   album_id int unsigned not null
 );
 
+insert into artists (artist_name, genre) values ('The Killers', 'Rock');
+insert into albums (album_name, artist_id, release_year) values ('Battle Born', 1, 2012)
 
