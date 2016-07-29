@@ -3,9 +3,7 @@
 # Run the MySQL container, with a database named 'records' and credentials
 # for a records-service user which can access it.
 echo "Starting DB..."  
-docker run --name db -d -e MYSQL_ROOT_PASSWORD=123 -e MYSQL_DATABASE=records -e MYSQL_USER=records_service -e MYSQL_PASSWORD=123 -p 3306:3306 mysql:latest
-
-sleep 10
+docker run --name db -d -e MYSQL_ROOT_PASSWORD=123 -e MYSQL_DATABASE=records -e MYSQL_USER=records_service -e MYSQL_PASSWORD=123 -p 3306:3306 hypriot/rpi-mysql
 
 # Wait for the database service to start up.
 echo "Waiting for DB to start up..."  
