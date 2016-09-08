@@ -13,4 +13,5 @@ docker exec db mysqladmin --silent --wait=30 -uroot -p123 ping || exit 1
 
 # Run the setup script.
 echo "Setting up initial data..."  
-docker exec -i db mysql -uroot -p123 records < records_create.sql  
+docker exec -i db mysql -uroot -p123 records < records_create.sql 
+
